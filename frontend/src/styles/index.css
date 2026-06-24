@@ -1,0 +1,29 @@
+/* ================ ГЛАВНЫЙ ФАЙЛ СТИЛЕЙ ================ */
+
+/* Переменные и глобальные стили */
+@import './variables.css';
+@import './globals.css';
+
+/* Auth - СТРАНИЦА ВХОДА */
+@import './auth/Login.css';
+
+/* Layout */
+@import './layout/Layout.css';
+@import './layout/Sidebar.css';
+
+/* Методист - СТИЛИ ДЛЯ РЕДАКТОРА КУРСОВ */
+@import './metodist/CourseEditor.css';
+
+/* Courses */
+/*@import './courses/CourseList.css';*/
+/*@import './courses/CoursePage.css';*/
+
+/* Dashboard */
+@import './dashboard/Dashboard.css';
+
+/* Mastery */
+/*@import './mastery/Mastery.css';*/
+
+/* Components */
+@import './components/CourseCard.css';
+@import './components/Modal.css';

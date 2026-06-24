@@ -1,0 +1,38 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Uploads (изображения)
+uploads/
+
+# Build
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Backend
+backend/uploads/
+backend/.env
+
+# Frontend
+frontend/.env
+frontend/build/
+frontend/node_modules/
