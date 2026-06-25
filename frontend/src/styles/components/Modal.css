@@ -1,0 +1,167 @@
+/* ================ МОДАЛЬНОЕ ОКНО ================ */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.7);
+  /* Добавляем префиксы для поддержки браузеров */
+  -webkit-backdrop-filter: blur(6px);  /* Safari, Chrome < 76 */
+  backdrop-filter: blur(6px);          /* Стандарт */
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-overlay.active { display: flex; }
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  transition: transform 0.15s;
+}
+
+.modal-close:hover { transform: rotate(90deg); }
+
+.cert-paper {
+  background: var(--white);
+  width: 720px;
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 80px -20px rgba(0,0,0,0.5);
+}
+
+.cert-band {
+  background: var(--red);
+  height: 8px;
+}
+
+.cert-paper-inner {
+  padding: 40px 48px 48px;
+}
+
+.cert-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cert-header-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--black);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.cert-header-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.cert-body { text-align: center; }
+
+.cert-prefix {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.cert-name {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--black);
+  margin-bottom: 6px;
+  line-height: 1.05;
+}
+
+.cert-mastery {
+  font-size: 18px;
+  color: var(--red);
+  font-weight: 700;
+  margin: 16px 0 28px;
+}
+
+.cert-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 28px 0;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.cert-mc-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.cert-mc-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--black);
+  letter-spacing: -0.025em;
+  line-height: 1;
+  font-feature-settings: 'tnum';
+}
+
+.cert-mc-value .small { font-size: 18px; color: var(--muted); }
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.cert-id {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.cert-date {
+  font-size: 13px;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.cert-qr {
+  width: 64px; height: 64px;
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
