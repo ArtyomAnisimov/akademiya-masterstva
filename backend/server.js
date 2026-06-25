@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const { sequelize, testConnection } = require('./src/config/database');
 
-// Импорт маршрутов
+// Импорт маршрутов jjjjjjjj
 const authRoutes = require('./src/routes/auth');
 const adminRoutes = require('./src/routes/admin');
 const courseRoutes = require('./src/routes/courses');
