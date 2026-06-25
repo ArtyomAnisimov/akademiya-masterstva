@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ================ КУРСЫ ================ */
 
 .page-eyebrow {
@@ -177,4 +178,185 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   gap: 16px;
+=======
+/* ================ КУРСЫ ================ */
+
+.page-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.page-eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--black);
+}
+
+.page-title .accent { color: var(--red); }
+
+.page-sub {
+  margin-top: 12px;
+  max-width: 620px;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* Stats Row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.stat-tile {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+}
+
+.stat-tile.dark {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.stat-tile.red {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
+}
+
+.stat-tile-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-tile.dark .stat-tile-label,
+.stat-tile.red .stat-tile-label {
+  color: rgba(255,255,255,0.65);
+}
+
+.stat-tile-value {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  font-feature-settings: 'tnum';
+}
+
+.stat-tile.dark .stat-tile-value,
+.stat-tile.red .stat-tile-value {
+  color: var(--white);
+}
+
+.stat-tile-value .unit {
+  font-size: 16px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.stat-tile-trend {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Chip Row */
+.chip-row {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 4px;
+}
+
+.chip {
+  padding: 7px 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.12s;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip:hover { border-color: var(--black); }
+.chip.active {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.chip-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg-soft);
+  padding: 1px 6px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.chip.active .chip-count {
+  background: rgba(255,255,255,0.18);
+  color: var(--white);
+}
+
+/* Course Grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 16px;
+>>>>>>> 1c6164c7b8cd6ec8ce3f3de3a0d18819aa26465c
 }

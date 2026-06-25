@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   /* Brand palette */
   --red: #E11D2C;
@@ -34,4 +35,42 @@
   --radius-sm: 6px;
   --radius: 10px;
   --radius-lg: 14px;
+=======
+:root {
+  /* Brand palette */
+  --red: #E11D2C;
+  --red-dark: #B81523;
+  --red-soft: #FEEBEC;
+  --red-tint: #FFF5F6;
+  --red-glow: rgba(225, 29, 44, 0.1);
+
+  --black: #0A0A0A;
+  --ink: #18181B;
+  --ink-soft: #27272A;
+  --muted: #71717A;
+  --muted-soft: #A1A1AA;
+
+  --white: #FFFFFF;
+  --bg: #FAFAFA;
+  --bg-soft: #F4F4F5;
+  --line: #E4E4E7;
+  --line-soft: #F4F4F5;
+
+  --green: #15803D;
+  --green-light: #48BB78;
+  --amber: #B45309;
+  --blue: #2196F3;
+  --blue-dark: #1976D2;
+  --orange: #FF9800;
+
+  /* Fonts */
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+>>>>>>> 1c6164c7b8cd6ec8ce3f3de3a0d18819aa26465c
 }

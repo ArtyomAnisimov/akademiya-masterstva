@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ================ LAYOUT ================ */
 
 .app-container {
@@ -113,4 +114,121 @@
   padding: 32px 36px 80px;
   animation: fadeIn 0.3s ease;
   max-width: 1400px;
+=======
+/* ================ LAYOUT ================ */
+
+.app-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100vh;
+}
+
+.main-content {
+  overflow-y: auto;
+  background: var(--bg);
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.crumb {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.crumb-sep { color: var(--muted-soft); }
+.crumb-current { color: var(--black); font-weight: 600; }
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--muted);
+  transition: all 0.12s;
+}
+
+.icon-btn:hover {
+  color: var(--black);
+  border-color: var(--ink-soft);
+}
+
+.icon-btn .dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
+  background: var(--red);
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.user-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px 4px 4px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+}
+
+.user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.user-meta {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+/* View */
+.view {
+  padding: 32px 36px 80px;
+  animation: fadeIn 0.3s ease;
+  max-width: 1400px;
+>>>>>>> 1c6164c7b8cd6ec8ce3f3de3a0d18819aa26465c
 }
